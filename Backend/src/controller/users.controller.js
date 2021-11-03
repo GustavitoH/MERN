@@ -9,7 +9,7 @@ function listUsers(req, res) {
       });
     } else {
       if (usuarioLists) {
-        res.status(200).jsonp({
+        res.status(200).json({
           usuario: usuarioLists,
         });
       }

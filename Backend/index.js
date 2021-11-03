@@ -2,6 +2,9 @@ const express = require('express');
 const { config } = require('./src/config/index');
 const app = express();
 var mongoose = require('mongoose');
+var cors = require('cors');
+
+app.use(cors());
 
 // Midleware Body Parse
 app.use(express.json());
